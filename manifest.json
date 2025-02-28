@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Kellokortti Project Event Styler",
+  "version": "1.0",
+  "description": "Change kellokortti week event bar color by project name. Modify content.js and content.css to match project name and color",
+  "content_scripts": [
+    {
+      "matches": ["*://app.kellokortti.fi/app/viikko/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
