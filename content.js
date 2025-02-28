@@ -1,7 +1,7 @@
 // Example project to highlight
-function highLightProjectUBRAH(event) {
+function highLightProjectExample(event) {
   const projectToFind = "Customer: UB Rahoitus Oy";
-  const classToAdd = "ub-rahoitus-highlight";
+  const classToAdd = "my-project-to-highlight";
 
   const innerDiv = event.querySelector(".kellokortti_new_event_inner");
   if (innerDiv && innerDiv.textContent.includes(projectToFind)) {
@@ -19,7 +19,7 @@ function highLightProjectUBRAH(event) {
 
 function updateEventColors() {
   document.querySelectorAll(".kellokortti_new_event").forEach(event => {
-    highLightProjectUBRAH(event);
+    highLightProjectExample(event);
   });
 }
 
